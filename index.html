@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class = "to-do-box">
+                <h2 id = "to-do-header"> To-Do List</h2>
+                <div id = "task-tracker"> Tasks left: 0, Tasks Completed: 0</div>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder = "Add a task to do!">
+                    <button onclick = "addTask()">Add task</button>
+                </div>
+                <br>
+                <ul id = "list-container">
+                </ul>
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>

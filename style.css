@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, coral, rgb(201, 47, 37));
+    padding: 10px;
+}
+
+.to-do-box{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(181, 194, 240);
+    margin: 100px auto 20px;
+    padding: 30px 40px 30px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+}
+
+.to-do-box h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 15px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button{
+    border: none;
+    background: rgb(97, 97, 243);
+    border-radius: 15px;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+ul li{
+    position: relative;
+    list-style: none;
+    /*list-style-position: inside;*/  /* (list-style used to be square now the bullet point is lined up! */
+    font-size: 17px;
+    padding: 12px;
+    margin: 5px 0px 15px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.todo-item{
+    background: #ebcc45;
+    border-radius: 20px;
+}
+
+/*
+#list-container{
+    background: #dfe095;
+    border-radius: 20px;
+}*/
+
+ul li span:hover{
+    color: red;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    background: #69dd52;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+}
+
+#task-tracker{
+    margin-bottom: 15px;
+}
